@@ -46,14 +46,13 @@ $(function(){
     -----------------*/
     new WOW().init();
 
-    $('#theform').click((event) => {
-        event.preventDefault();
+    $('#theform').submit((event) => {
+         event.preventDefault();
         const object = {
             name: $('#name').val(),
             message: $('#message').val(),
             email: $('#email').val()
         };
-        console.log(object);
         fetch('https://hooks.zapier.com/hooks/catch/6297575/otbl3j7/', {
             method : 'post',
             mode: 'cors',
@@ -68,7 +67,7 @@ $(function(){
 
 
         }).catch( (error) => console.log(error) )
-    })
+     })
 
 });
 
