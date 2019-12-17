@@ -45,6 +45,31 @@ $(function(){
     /* wow
     -----------------*/
     new WOW().init();
+
+    $('#theform').click((event) => {
+        event.preventDefault();
+        const object = {
+            name: $('#name').val(),
+            message: $('#message').val(),
+            email: $('#email').val()
+        };
+        console.log(object);
+        fetch('https://hooks.zapier.com/hooks/catch/6297575/otbl3j7/', {
+            method : 'post',
+            mode: 'cors',
+            body: JSON.stringify(object)
+        }).then( (data) => {
+            console.log('data : '+ data);
+            alert("Message sent successfully !");
+
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+
+
+        }).catch( (error) => console.log(error) )
+    })
+
 });
 
 /* start preloader */

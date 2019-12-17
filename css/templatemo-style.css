@@ -416,14 +416,14 @@ header .social-icon li a
 	{
 		height: 50px;
 	}
-#contact input[type="submit"]
+#contact input[type="button"]
 	{
 		background: #28a7e9;
 		font-weight: bold;
 		-webkit-transition: all 0.4s ease-in-out;
 		        transition: all 0.4s ease-in-out;
 	}
-#contact input[type="submit"]:hover
+#contact input[type="button"]:hover
 	{
 		background: transparent;
 	}
