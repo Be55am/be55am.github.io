@@ -46,16 +46,17 @@ $(function(){
     -----------------*/
     new WOW().init();
 
-    $('#theform').submit((event) => {
-         event.preventDefault();
+    $('#theform').click((event) => {
+        // event.preventDefault();
+        console.log('Submiting ...');
         const object = {
             name: $('#name').val(),
-            message: $('#message').val(),
-            email: $('#email').val()
+            text: $('#message').val(),
+            mail: $('#email').val()
         };
-        fetch('https://hooks.zapier.com/hooks/catch/6297575/otbl3j7/', {
+        fetch('https://0d1xua7618.execute-api.us-east-1.amazonaws.com/default/mail-sender', {
             method : 'post',
-            mode: 'cors',
+            mode: 'no-cors',
             body: JSON.stringify(object)
         }).then( (data) => {
             console.log('data : '+ data);
