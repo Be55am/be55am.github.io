@@ -243,6 +243,7 @@ header .social-icon li a
 .element {
 	height: 60px;
 	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 /* end home */
 
@@ -378,6 +379,10 @@ header .social-icon li a
 		font-weight: bold;
 		padding-bottom: 10px;
 	}
+.portfolio-overlay p{
+	font-size: small;
+	font-weight: bold;
+}
 #portfolio .portfolio-thumb .portfolio-overlay .btn
 	{
 		background: none;
@@ -594,3 +599,11 @@ header .social-icon li a
 
 }
 /* end 360 media quires */
+
+.bordered-text{
+	text-shadow: 2px 2px 0px #000000;
+}
+
+.portfolio-thumb img {
+	height: 200px;
+}
