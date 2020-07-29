@@ -55,6 +55,8 @@ $(function(){
             mail: $('#email').val()
         };
         fetch('https://0d1xua7618.execute-api.us-east-1.amazonaws.com/default/mail-sender', {
+
+
             method : 'post',
             mode: 'no-cors',
             body: JSON.stringify(object)
