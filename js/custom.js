@@ -54,7 +54,7 @@ $(function(){
             text: $('#message').val(),
             mail: $('#email').val()
         };
-        fetch('https://0d1xua7618.execute-api.us-east-1.amazonaws.com/default/mail-sender', {
+        fetch('https://a420p45omb.execute-api.us-east-1.amazonaws.com/default/portfolio-mailsender', {
 
 
 
